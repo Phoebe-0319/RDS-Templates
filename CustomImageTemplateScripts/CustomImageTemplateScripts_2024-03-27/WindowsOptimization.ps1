@@ -25,7 +25,7 @@ Begin {
             $WindowsVersion = (Get-ItemProperty "HKLM:\Software\Microsoft\Windows NT\CurrentVersion\").ReleaseId
             $WorkingLocation = (Join-Path $PSScriptRoot $WindowsVersion)
             $templateFilePathFolder = "C:\AVDImage"
-            $ConfigurationFilesUrl = "https://raw.githubusercontent.com/Azure/RDS-Templates/master/VDOT-ConfigurationFiles"
+            $ConfigurationFilesUrl = "https://raw.githubusercontent.com/Phoebe-0319/RDS-Templates/user/xianwang/migrate-VDOT-ConfigurationFiles-to-RDS-Templates/VDOT-ConfigurationFiles"
 
             if (!(Test-Path -Path $WorkingLocation)) {
                 New-Item -Path $WorkingLocation -ItemType Directory
